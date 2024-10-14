@@ -7,7 +7,7 @@ END=0
 while true; do
 clear
 echo "press q to exit"
-echo $LEVEL | ./levels.sed
+echo $LEVEL | /usr/bin/sed -Enuf ./levels.sed
 if [ "$LEVEL" = "quit" ]; then
 	break 2
 fi
@@ -37,9 +37,9 @@ echo '' > res
 	fi
 	CMD=''
 	TMP=''
-done) | ./burger.sed 
+done) | /usr/bin/sed -Enuf ./burger.sed 
 LEVEL=`sed -n '$,$p' res`_`echo $LEVEL`
-LEVEL=`echo "$LEVEL" | ./nextlevel.sed`
+LEVEL=`echo "$LEVEL" | /usr/bin/sed -Enuf ./nextlevel.sed`
 END=1
 clear
 if [ "$LEVEL" = "quit" ]; then

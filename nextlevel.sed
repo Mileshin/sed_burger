@@ -1,4 +1,3 @@
-#!/opt/sfw/bin/gsed -Enuf
 /^loss/b loss
 /^quit/b quit
 /[^[1-9]]1[^[1-9]]/b lev1

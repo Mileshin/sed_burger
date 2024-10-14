@@ -1,4 +1,3 @@
-#!/opt/sfw/bin/gsed -Enuf
 # Sed burger
 # 24th of December, 2016
 

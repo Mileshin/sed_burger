@@ -1,5 +1,3 @@
-#!/opt/sfw/bin/gsed -Enuf
-
 /^1/b level1
 /^2/b level2
 /^3/b level3
